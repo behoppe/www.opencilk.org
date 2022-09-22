@@ -1,0 +1,37 @@
+/* Colors */
+:root {
+  --lightgray: #e0e0e0;
+  --gray: #C0C0C0;
+  --darkgray: #333;
+  --midnight: #001630;
+  --blue: #043065;
+  --white: #fff;
+  --lime: #91b301;
+  --teal: #11a5a1;
+  --darkteal: #0e8481;
+  --sky: #0cb3e1;
+  --tangelo: #f44500;
+  --yellow: #f4b200;
+  --americanyellow: #f4b200;
+  --safetyyellow: #f4d400;
+}
+html,
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--darkgray);
+  background: url('/img/grey-silk-bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; 
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Ubuntu, sans-serif;
+}
+h1, h2, h3 {
+  color: var(--blue);
+}
+a.defn {
+  font-weight: bold;
+  font-style: italic;
+}
