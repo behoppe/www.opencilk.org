@@ -6,13 +6,13 @@
 {% set context = eleventyNavigation.parent %}
 {% endif %}
 
-<div id="sidebar-nav" class="list-group border-0 rounded-0 text-sm-start min-vh-100">
 
-    <h5 class="w-100 p-2 rounded" style="margin-left: -0.4em; color: var(--midnight); background-color: var(--lime);">
-        {{ context }}
-    </h5>
-    <div class="collapse show" id="collapseContext">
-    <div class="list-group ps-3 sticky-top sticky-offset" style="margin-left: -2em;">
+<div class="col-md-3">
+    <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+
+        <h5>
+            {{ context }}
+        </h5>
         {% set items = collections.all | eleventyNavigation(context) %}
         <ul>
         {% for item in items %}
@@ -21,15 +21,8 @@
             </li>
         {% endfor %}
         </ul>
-    </div>
-    </div>
-    <h6 class="p-2 rounded" style="margin-left: -0.4em; color: var(--midnight); background-color: var(--teal);">
-        On this page
-    </h6>
-    <div class="collapse show" id="collapseToc">
-        <div class="list-group ps-3 sticky-top sticky-offset" style="margin-left: -2em;">
-            {{ content | toc | safe }}
-        </div>
-    </div> 
 
+        <p>On this page</p>
+        {{ content | toc | safe }}
+    </div>
 </div>

@@ -35,6 +35,7 @@ module.exports = function(eleventyConfig) {
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/sphinx-bootstrap-theme/demo/build/html");
 
   // Copy the favicon materials to the output
   eleventyConfig.addPassthroughCopy("src/*.png");
